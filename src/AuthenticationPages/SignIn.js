@@ -57,7 +57,16 @@ export default function SignIn(props) {
           />
 
           <Grid container>
-            <Grid item xs>
+            <Grid
+              container
+              xs={12}
+              sm={4}
+              md={4}
+              lg={4}
+              xl={4}
+              direction="column"
+              alignContent="center"
+            >
               <Link
                 href="#"
                 variant="body2"
@@ -67,15 +76,24 @@ export default function SignIn(props) {
                 {"Forgot Password?"}
               </Link>
             </Grid>
-
-            <Grid item>
+            <Grid container xs={false} sm={4} md={4} lg={4} xl={4} />
+            <Grid
+              container
+              xs={12}
+              sm={4}
+              md={4}
+              lg={4}
+              xl={4}
+              direction="column"
+              alignContent="center"
+            >
               <Link
                 href="#"
                 variant="body2"
                 onClick={props.showSignUp}
                 className={classes.linkStyle}
               >
-                {"Don't Have An Account? Sign Up!"}
+                {"Don't Have An Account?"}
               </Link>
             </Grid>
           </Grid>
